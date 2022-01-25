@@ -18,5 +18,5 @@ app.use((err, req, res, next) => {
     }
     return res.status(500).json({ message: "Erro interno" });
 });
-app.listen("3331", () => console.log("Servidor"));
+app.listen(process.env.PORT || "3331", () => console.log("Servidor"));
 //# sourceMappingURL=server.js.map
